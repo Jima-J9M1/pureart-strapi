@@ -12,19 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
-    "slug": {
-      "type": "uid"
+    "Slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "Name"
     },
-    "articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article",
-      "mappedBy": "category"
-    },
-    "description": {
+    "Description": {
       "type": "text"
     }
   }

@@ -1,14 +1,13 @@
 {
   "kind": "singleType",
-  "collectionName": "globals",
+  "collectionName": "global_values",
   "info": {
-    "singularName": "global",
-    "pluralName": "globals",
-    "displayName": "global",
-    "description": ""
+    "singularName": "global-value",
+    "pluralName": "global-values",
+    "displayName": "globalValue"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "attributes": {
     "siteName": {
@@ -16,26 +15,25 @@
       "required": true
     },
     "favicon": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ]
-    },
-    "siteDescription": {
-      "type": "text",
+      ],
+      "type": "media",
+      "multiple": true,
       "required": true
     },
+    "siteDescription": {
+      "type": "text"
+    },
     "logo": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
       "allowedTypes": [
         "images",
         "files"
-      ]
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     },
     "contactEmail": {
       "type": "email"
